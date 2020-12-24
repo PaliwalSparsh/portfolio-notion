@@ -68,13 +68,13 @@ body {
 .Header,
 .PageRoot,
 .ArticleList {
-  width: 900px;
+  width: 1280px;
   max-width: 100%;
   margin: 0px auto;
   padding: 0px 96px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1280px) {
   .Header,
   .PageRoot,
   .ArticleList {
