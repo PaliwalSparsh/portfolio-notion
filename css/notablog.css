@@ -1,7 +1,8 @@
-/* Navbar */
-img {
-  pointer-events: none;
+body {
+  background: rgb(250, 250, 246);
 }
+
+/* Navbar */
 
 .Navbar {
   display: flex;
@@ -15,7 +16,7 @@ img {
   height: 50px;
   padding: 10px 20px;
   /* Background blur stuff. */
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(250, 250, 246, 0.4);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   overflow-x: auto;
@@ -32,10 +33,10 @@ img {
 }
 
 .Navbar__Btn {
-  border-radius: 5px;
+  border-radius: 0.25rem;
   padding: 0 6px;
   line-height: 1.8125;
-  transition: background 120ms ease-in 0s;
+  transition: background 30ms ease-in-out 0s;
   /* For centering inline image */
   display: flex;
   align-items: center;
@@ -43,6 +44,10 @@ img {
 
 .Navbar__Btn:hover {
   background: rgba(55, 53, 47, 0.08);
+}
+
+.Navbar__Btn:active {
+  background: rgba(55, 53, 47, 0.16);
 }
 
 .Navbar__Btn > span {
@@ -121,6 +126,7 @@ img {
   line-height: 1.2;
   font-size: 2.625rem;
   font-weight: 700;
+  letter-spacing: -0.005em;
 }
 
 .Header > *:last-child {
@@ -129,6 +135,7 @@ img {
 
 .Header__DescBigQuoteMark {
   font-size: 1.5em;
+  line-height: 0;
 }
 
 /* DateTagBar */
@@ -143,7 +150,7 @@ img {
   margin-right: 10px;
   margin-bottom: 0.5rem;
   padding: 2px 6px;
-  border-radius: 3px;
+  border-radius: 0.25rem;
 }
 
 .DateTagBar__Date {
@@ -205,7 +212,7 @@ img {
 /* Article */
 
 .Article {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
 }
 
 .Article a {
@@ -216,14 +223,18 @@ img {
 .Article__Title {
   margin: 0;
   padding-bottom: 0.5rem;
-  line-height: 1.654;
-  font-size: 1.625rem;
-  font-weight: 700;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .Article__Title > a {
-  margin-left: 5px;
   border-bottom: 2px solid hsl(45, 8%, 85%);
+}
+
+.Article__Title > a:not(:first-child) {
+  margin-left: 5px;
 }
 
 .Article__Title > a:hover {
